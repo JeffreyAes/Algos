@@ -30,7 +30,6 @@ const isAnagram = function (s, t) {
         }
     }
     for (let i = 0; i < t.length; i++) {
-        // if (s.includes(t[i])) {
         if (object[t[i]]) {
             object[t[i]]--
 
