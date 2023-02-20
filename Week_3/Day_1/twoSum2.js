@@ -36,8 +36,8 @@ const target3 = -1
 var twoSum = function (numbers, target) {
     let l = 0
     let r = numbers.length - 1
-    let num1 = 0
-    let num2 = 0
+    // let num1 = 0
+    // let num2 = 0
     while (l < r) {
         if (numbers[l] + numbers[r] > target) {
             r--
@@ -46,13 +46,13 @@ var twoSum = function (numbers, target) {
             l++
         }
         else {
-            num1 = l + 1
-            num2 = r + 1
-            break
+            // num1 = l + 1
+            // num2 = r + 1
+            return ([l + 1, r + 1])
         }
     }
 
-    return [num1, num2]
+    // return [num1, num2]
 
 
 };
