@@ -23,3 +23,6 @@ def maxDepth(root):
         return max(depthCounter(root.left, depth + 1), depthCounter(root.right, depth + 1))
                     
     return depthCounter(root, 0)
+
+# if not root: return 0
+    # return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
